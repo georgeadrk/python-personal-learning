@@ -26,5 +26,5 @@ while True:
     if option == 'Y':
         continue
     elif option == 'N':
-        print('Goodbye! Play again sometime!')
+        print('Goodbye!')
         exit()
