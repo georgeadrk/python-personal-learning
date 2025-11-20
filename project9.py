@@ -22,14 +22,14 @@ class PassManager():
             print(content)
 
     def deleteAll(self) -> None:
-        open('project8_passwords.txt', 'w').close()
+        open('project9_passwords.txt', 'w').close()
         print('All saved data successfully deleted!')
 
 passManager = PassManager()
 
 passManager.showOptions()
 while True:
-    ans: int = int(input("Choose an option: "))
+    ans: int = int(input("\nChoose an option: "))
 
     if ans == 1:
         passManager.addAccount()
@@ -40,3 +40,6 @@ while True:
     elif ans == 4:
         print("Goodbye!")
         break
+    else:
+        print("Please retry!")
+        continue
